@@ -1,5 +1,5 @@
 
-# CTL Thompson LLM Project
+# RAG Data extraction LLM Project
 
 ## Objective
 
