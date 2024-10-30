@@ -1,0 +1,34 @@
+{
+    "question_model": {
+        "model": "mistral",
+        "base_url": "http://localhost:1234/v1",
+        "openai_api_key": "lm-studio",
+        "ollama": false,
+        "model_settings_ollama": {
+            "generation": {
+                "num_ctx": 4096,
+                "num_predict": -1
+            },
+            "sampling": {
+                "repeat_last_n": 64,
+                "repeat_penalty": 1.100000,
+                "top_k": 40,
+                "tfs_z": 1.000000,
+                "top_p": 0.950000,
+                "temperature": 0.700000,
+                "mirostat": 0,
+                "mirostat_eta": 0.100000,
+                "mirostat_tau": 5.000000
+            }
+        }
+    },
+    "embeddings_model": {
+        "config": {
+            "model": "nomic-ai/nomic-embed-text-v1.5",
+            "base_url": "http://localhost:1234/v1",
+            "openai_api_key": "lm-studio",
+            "tiktoken_enabled": false
+        },
+        "ollama": false
+    }
+}

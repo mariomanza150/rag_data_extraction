@@ -1,0 +1,396 @@
+{
+    "datapoints_prompts": [
+        {
+            "section": "cover",
+            "slug_name": "project_name",
+            "search": "filing no,prepared for,phone,fax",
+            "question": "What is the Project Name of this report?",
+            "desc": "The Project Name is found after the report type and right before the filing no and address."
+        },
+        {
+            "section": "cover",
+            "slug_name": "client_name",
+            "search": "filing no,prepared for,phone,fax",
+            "question": "What is the client's name?",
+            "desc": "The client's name is found between the phrases 'prepared for' and the 'project no'."
+        },
+        {
+            "section": "cover",
+            "slug_name": "project_number",
+            "search": "filing no,prepared for,phone,fax",
+            "question": "What is the project number of this report?",
+            "desc": "The project number consists of letters followed by a series of numbers, possibly with characters in between. It may be in the format: XX00000-000."
+        },
+        {
+            "section": "cover",
+            "slug_name": "report_date",
+            "search": "filing no,prepared for,phone,fax",
+            "question": "What is the date of this report?",
+            "desc": "The date is found after the project no."
+        },
+        {
+            "section": "scope",
+            "slug_name": "proposal_number",
+            "search": "report,scope,investigation,proposal",
+            "question": "What is the proposal number or service agreement ID?",
+            "desc": "The proposal number or service agreement ID is found in the 'scope' section, before the 'summary of conclusions'."
+        },
+        {
+            "section": "scope",
+            "slug_name": "proposal_date",
+            "search": "report,scope,investigation,proposal",
+            "question": "What is the date of the proposal or service agreement?",
+            "desc": "The date of the proposal is next to the proposal no."
+        },
+        {
+            "section": "proposed_construction",
+            "slug_name": "building_use_type",
+            "search": "anticipate,structures,basements,residences,offices,proposed construction",
+            "question": "What information can you find about the proposed buildings?",
+            "desc": "The description of the proposed buildings, including their anticipated use, size and materials."
+        },
+        {
+            "section": "investigation",
+            "slug_name": "num_borings",
+            "search": "field,investigation,drilling,drilled,boring,exploratory,advanced",
+            "question": "What is the total number of borings drilled?",
+            "desc": "The total number of borings drilled in the field investigation."
+        },
+        {
+            "section": "investigation",
+            "slug_name": "depth_borings",
+            "search": "field,investigation,drilling,drilled,boring,exploratory,advanced",
+            "question": "What is the shallowest and the deepest depths at which a boring was drilled?",
+            "desc": "The feet at which the deepest and shallowest boring were drilled."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "soil_type",
+            "search": "subsurface conditions/subsoils encountered,borings generally consisted,interlayered/summary of conclusions",
+            "question": "What is the composition of the soils and at what depth were they found?",
+            "desc": "The composition of soil and/or bedrock as described and the depth it was found."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "depth_bedrock",
+            "search": "bedrock was encountered/subsurface conditions/summary of conclusions",
+            "question": "At what depth was bedrock encountered or discovered?",
+            "desc": "The depth at which bedrock was encountered is found in the subsurface conditions section."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "depth_groundwater",
+            "search": "groundwater was encountered/subsurface conditions/summary of conclusions",
+            "question": "At what depth was groundwater encountered or discovered?",
+            "desc": "The depth at which groundwater was encountered is recorded in the subsurface conditions section."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "seismic_site_class",
+            "search": "seismicity,seismic/site class/ibc",
+            "question": "What seismic classifications were given to the site? What is the IBC section or code of each class?",
+            "desc": "the seismic site class and the IBC section associated with it, there may be multiple classes"
+        },
+        {
+            "section": "geological_hazards",
+            "slug_name": "geological_hazard",
+            "search": "potential geologic hazard/geologic hazard",
+            "question": "What are the geological hazard(s) present at the site?",
+            "desc": "the geological hazard(s) present at the site"
+        },
+        {
+            "section": "geologic_hazards",
+            "slug_name": "shortform_hazard_discussion",
+            "search": "potential geologic hazard/geologic hazard/collapse",
+            "question": "What are the collapse-prone hazards mentioned?",
+            "desc": "the geologic hazard(s) that explicitly mention are prone to collapse"
+        },
+        {
+            "section": "geologic_hazards",
+            "slug_name": "geologic_hazard_subsections",
+            "search": "geologic,hazard/geologic hazard",
+            "question": "What are the sections that discuss geologic hazards?",
+            "desc": "the list of sections that discuss geologic hazards"
+        },
+        {
+            "section": "site_development",
+            "slug_name": "subexcavation_depths",
+            "search": "sub-excavation depth extend excavat",
+            "question": "What are the depths (in feet) of the recommended sub-excavations for the site?",
+            "desc": "any and all sub-excavation depth(s) or extension(s) expressed in feet as recommended or advocated for the site construction"
+        },
+        {
+            "section": "foundations",
+            "slug_name": "recommended_foundation",
+            "search": "foundation,recommend,footings/foundation design and construction requirements/foundations",
+            "question": "What are all the recommended foundations?",
+            "desc": "the foundation types recomended for the construction."
+        },
+        {
+            "section": "footings",
+            "slug_name": "max_soil_pressure",
+            "search": "maximum allowable soil pressure/footings should be designed/footings",
+            "question": "What is the maximum allowable soil pressure of each footing type?",
+            "desc": "maximum allowable soil pressure measured in psf."
+        },
+        {
+            "section": "footings",
+            "slug_name": "footings_minimum_deadload",
+            "search": "minimum deadload pressure/footings should be designed/footings",
+            "question": "What is the minimum deadload pressure for of each footing type?",
+            "desc": "maximum allowable soil pressure measured in psf."
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_end_pressure",
+            "search": "piers,allowable end pressure,end pressure",
+            "question": "What is the maximum allowable end pressure of the piers?",
+            "desc": "maximum allowable end pressure for drilled pier design, expressed in psf"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_skin_friction",
+            "search": "allowable skin friction,skin,friction,piers",
+            "question": "What is the allowable skin friction of the piers?",
+            "desc": "allowable skin friction for drilled pier design, expressed in psf"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_min_length",
+            "search": "piers,minimum total length",
+            "question": "What is the minimum total length of the piers?",
+            "desc": "minumum total length of the pier design, expressed in feet"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_min_penetration",
+            "search": "penetration,penetrate,drilled piers,piers",
+            "question": "What is the minimum depth at which the piers are recommended to penetrate?",
+            "desc": "minimum depth of penetration of the piers, expressed in feet"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_min_deadload",
+            "search": "piers,minimum deadload pressure",
+            "question": "What is the minimum deadload the piers should be designed for?",
+            "desc": "minimum deadload for pier design, expressed in psf"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "uplift_force",
+            "search": "piers,uplift force,drilled piers",
+            "question": "What is the uplift force the piers should be designed with?",
+            "desc": "uplift force for pier design"
+        },
+        {
+            "section": "drilled_piers",
+            "slug_name": "drilled_pier_void_thickness",
+            "search": "piers,void,drilled piers",
+            "question": "What is the thickness of the void used for pier design?",
+            "desc": "the thickness of the void betweeen piers and/or other structures"
+        },
+        {
+            "section": "laterally_loaded_piers",
+            "slug_name": "soil_input_data_for_lpile",
+            "search": "soil laterally loaded piers,lpile",
+            "question": "What is the soil input data value for laterally loaded piers (lpile)?",
+            "desc": "soil input data for laterally loaded piers"
+        },
+        {
+            "section": "laterally_loaded_piers",
+            "slug_name": "horizontal_subgrade_modulus_values_per_soil_type",
+            "search": "horizontal subgrade modulus,subgrade modulus",
+            "question": "What are the horizontal subgrade modulus values per each soil type?",
+            "desc": "horizontal subgrade modulus values per each soil type"
+        },
+        {
+            "section": "micropiles",
+            "slug_name": "grout_ground_interface_bond_strength",
+            "search": "grout ground interface,bond strength",
+            "question": "What is the bond strength of the grout ground interface?",
+            "desc": "the value of the bond strength of the interface between grout and ground"
+        },
+        {
+            "section": "micropiles",
+            "slug_name": "micropiles_minimum_length",
+            "search": "micropile,minimum length/micropile,at least,length,feet,ft",
+            "question": "What is the minimum length of micropiles mentioned?",
+            "desc": "the minimum length of micropiles metioned, expressed in feet"
+        },
+        {
+            "section": "micropiles",
+            "slug_name": "micropiles_minimum_embedment",
+            "search": "micropile,minimum embedment,embed,casing/micropile,at least,embed,casing",
+            "question": "What is the minimum length the micropiles should be embedded to?",
+            "desc": "the minimum length of the casing embedment of the micropile, expressed in inches or milimiters"
+        },
+        {
+            "section": "micropiles",
+            "slug_name": "micropiles_minimum_deadload",
+            "search": "micropile,minimum deadload,pressure/micropile,deadload,design,recommend",
+            "question": "What is the minimum deadload pressure of micropiles mentioned?",
+            "desc": "the minimum deadload pressure for micropile design, expressed in psf"
+        },
+        {
+            "section": "micropiles",
+            "slug_name": "micropiles_void_thickness",
+            "search": "micropile,unfilled compressible void/micropile,void",
+            "question": "What is the thickness of the void used in micropile design?",
+            "desc": "the thickness of the void used for micropile design, expressed in inches or milimiters"
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "maximum_soil_pressure",
+            "search": "slab,maximum soil pressure,bearing,psf/slab,soil,bearing,psf",
+            "question": "What is the maximum soil pressure used for slab design?",
+            "desc": "the maximum allowable soil pressure for slabs mentioned, expressed in psf"
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "modulus_of_subgrade_reaction",
+            "search": "slab,modulus of subgrade reaction,pci/subgrade reaction,value,pci",
+            "question": "What is the value of the modulus of subgrade reaction?",
+            "desc": "the modulus of subgrade reaction value used in slab design, expressed in pci"
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "ym_edge_lift",
+            "search": "differential soil movement,edge lift,ym/slab,movement,upward,soil,uplift",
+            "question": "What is the differential soil movement for edge lift in slab design?",
+            "desc": "The differential soil movement (ym) for edge lift refers to the extent of vertical movement or deformation at the edges of a slab foundation. It is typically measured in inches, though it may sometimes be presented in feet."
+        },        
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "ym_center_lift",
+            "search": "differential soil movement, center lift,ym/slab,center lift,movement,upward,soil,edge drop",
+            "question": "What is the differential soil movement value for center lift?",
+            "desc": "differential soil movement for center lift, refers to the extent of vertical movement or deformation at the center of a slab foundation. It can also be referred to as 'ym' or 'edge drop'. It usually is expressed in 'inches' or 'feet'."
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "em_edge_lift",
+            "search": "edge moisture variation for edge lift/slab,edge lift,moisture",
+            "question": "What is the edge moisture variation value for edge lift?",
+            "desc": "edge moisture variation for edge lift, refers to the moisture content specifically around the edges of a slab foundation, which contributes to differential movement and potential uplift at the edge of the slab. edge moisture variation can also be referred to as 'em'. It usually is expressed in a percent value."
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "em_center_lift",
+            "search": "edge moisture variation for center lift/slab,center lift,moisture",
+            "question": "What is the edge moisture variation value for center lift?",
+            "desc": "edge moisture variation for center lift, refers to the moisture content specifically around the edges of a slab foundation, which contributes to differential movement and potential uplift at the center of the slab. edge moisture variation can also be referred to as 'em'. It usually is expressed in a percent value."
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "potential_heave",
+            "search": "estimated potential heave/slab,potential heave",
+            "question": "What is the estimated potential heave value?",
+            "desc": "potential heave in slab performance risk refers to the upward movement or swelling of the slab foundation, typically expressed in 'inches' or 'feet'."
+        },
+        {
+            "section": "slab_performance_risk",
+            "slug_name": "depth_of_wetting",
+            "search": "depth of wetting/slab,depth,wetting",
+            "question": "What is the depth of wetting considered used in the potential heave evaluation?",
+            "desc": "depth of wetting in slab performance risk refers to the vertical depth to which moisture penetrates or wets the concrete slab. It is expressed in 'inches' or 'feet'."
+        },
+        {
+            "section": "below_grade_walls",
+            "slug_name": "atrest_equivalent_fluid_density_and_associated_backfill_material",
+            "search": "at-rest equivalent fluid density,below grade walls/at-rest equivalent fluid density",
+            "question": "What is the at-rest equivalent fluid density value for below grade walls and what backfill/soil material is considered?",
+            "desc": "at-rest equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a below grade wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "below_grade_walls",
+            "slug_name": "active_equivalent_fluid_density_and_associated_backfill_material_below_grade",
+            "search": "active equivalent fluid density,below grade walls/active equivalent fluid density",
+            "question": "What is the active equivalent fluid density value for below grade walls and what backfill/soil material is considered?",
+            "desc": "active equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a below grade wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "below_grade_walls",
+            "slug_name": "passive_equivalent_fluid_density_and_associated_backfill_material_below_grade",
+            "search": "passive equivalent fluid density,below grade walls/passive equivalent fluid density",
+            "question": "What is the passive equivalent fluid density value for below grade walls and what backfill/soil material is considered?",
+            "desc": "passive equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a below grade wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "retaining_walls",
+            "slug_name": "at_rest_equivalent_fluid_density",
+            "search": "at-rest equivalent fluid density,retaining walls/at-rest equivalent fluid density",
+            "question": "What is the at-rest equivalent fluid density value for retaining walls and what backfill/soil material is considered?",
+            "desc": "at-rest equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a retaining wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "retaining_walls",
+            "slug_name": "active_equivalent_fluid_density_and_associated_backfill_material_retaining_wall",
+            "search": "active equivalent fluid density,retaining walls/active equivalent fluid density",
+            "question": "What is the active equivalent fluid density value for retaining walls and what backfill/soil material is considered?",
+            "desc": "active equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a retaining wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "retaining_walls",
+            "slug_name": "passive_equivalent_fluid_density_and_associated_backfill_material_retaining_wall",
+            "search": "at-rest equivalent fluid density,retaining walls/at-rest equivalent fluid density",
+            "question": "What is the at-rest equivalent fluid density value for retaining walls and what backfill/soil material is considered?",
+            "desc": "at-rest equivalent fluid density refers to the earth pressure exerted by soil against a retaining structure (in this case a retaining wall). It is expressed in 'pounds per cubic foot' (pcf)."
+        },
+        {
+            "section": "retaining_walls",
+            "slug_name": "friction_angle_cohesion_and_unit_weight_with_associated_material_types",
+            "search": "friction angle,cohesion,retaining walls/friction angle,cohesion",
+            "question": "What is the friction angle and the cohesion value for retaining walls and what backfill/soil material is considered?",
+            "desc": "The friction angle is typically denoted by the Greek letter φ and is expressed in degrees. cohesion is expressed in pounds per square foot (psf) and denoted by the symbol c."
+        },
+        {
+            "section": "concrete",
+            "slug_name": "sulfate_concentration",
+            "search": "sulfate,soluble,water/concrete,suflate,soluble",
+            "question": "What is the water soluble sulfate concentration and how many samples were used to determine it?",
+            "desc": "the concentration of water soluble suflate in the soil, expressed in percent, and the number of samples"
+        },
+        {
+            "section": "pavements",
+            "slug_name": "soil_classification",
+            "search": "soil,soil class,soil type",
+            "question": "What is the soil classification(s) or soil type(s)?",
+            "desc": "type/grade/classification of soil as mentioned in the text"
+        },
+        {
+            "section": "pavements",
+            "slug_name": "hveem_stabilometer_value",
+            "search": "hveem stabilometer value,r-value",
+            "question": "What is the hveem stabilometer value?",
+            "desc": "hveem stabilometer value reported, expressed in a numerical value"
+        },
+        {
+            "section": "pavements",
+            "slug_name": "asphalt_thickness",
+            "search": "asphalt thickness,pavement",
+            "question": "What are the thicknesses of asphalt sections and their associated areas?",
+            "desc": "thicknesses of asphalt pavement, expressed in inches"
+        },
+        {
+            "section": "pavements",
+            "slug_name": "cement_thickness",
+            "search": "portland cement,pcc,pavement",
+            "question": "What is the thickness of the portland cement concrete section?",
+            "desc": "thickness of the proposed portland cement concrete section"
+        },
+        {
+            "section": "references",
+            "slug_name": "reference",
+            "search": "reference",
+            "question": "What are the documents/links/appendices listed as reference?",
+            "desc": "list of documents/links/appendices used as references in the text"
+        },
+        {
+            "section": "cover",
+            "slug_name": "site_address",
+            "search": "phone fax,prepared for",
+            "question": "What is the address of the site at which the assesment/evaluation/investigation was conducted at?",
+            "desc": "address of the site, located between the assesment/evaluation/investigation name and the 'prepared for' texts"
+        }
+    ]
+}
