@@ -27,7 +27,7 @@ class AzureBoxLoader:
             client_id=box_client_id,
             client_secret=box_client_secret,
             user=box_user,
-            enterprise_id="601722",
+            enterprise_id="",
         )
 
         self.box_client = Client(auth)
@@ -37,9 +37,7 @@ class AzureBoxLoader:
         self.fetched = 0
         self.get_previously_loaded()
 
-    def load_documents(self, folder_ids=[12461398082]):
-        # folder_ids = [11564872428, 11431629939]# Start the process
-        # folder_ids = [11431629939]# Start the process
+    def load_documents(self, folder_ids=[]):
 
         for root_folder_id in folder_ids:
             # Root folder ID for Box
