@@ -1,0 +1,7 @@
+venv
+__pycache__
+chroma
+data
+resp_csv
+resp_json
+*.log

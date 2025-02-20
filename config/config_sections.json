@@ -1,0 +1,88 @@
+{
+    "report_sections": [
+        {
+            "name": "COVER",
+            "other_names": [],
+            "description": "First page, contains a date, project number (Project No.) and Client name. Has location address and report type.",
+            "slug": "cover"
+        },
+        {
+            "name": "SCOPE",
+            "other_names": [],
+            "description": "A summary of the investigation scope and purpose, contains the proposal information and date.",
+            "slug": "scope"
+        },
+        {
+            "name": "PROPOSED CONSTRUCTION",
+            "other_names": [],
+            "description": "Details about the proposed construction methods and materials ",
+            "slug": "proposed_construction"
+        },
+        {
+            "name": "INVESTIGATION",
+            "other_names": ["INVESTIGATION", "SUBSURFACE INVESTIGATION", "FIELD INVESTIGATION"],
+            "description": "Information gathered during site investigation, including subsurface and field investigations",
+            "slug": "investigation"
+        },
+        {
+            "name": "SUBSURFACE CONDITIONS",
+            "other_names": [],
+            "description": "Characteristics of the subsurface soil and rock conditions",
+            "slug": "subsurface_conditions"
+        },
+        {
+            "name": "GEOLOGIC HAZARDS",
+            "other_names": [],
+            "description": "Potential geologic hazards that may impact the project's foundation design",
+            "slug": "geologic-hazards"
+        },
+        {
+            "name": "FOUNDATIONS",
+            "other_names": ["FOUNDATIONS", "BUILDING FOUNDATIONS"],
+            "description": "Design and construction details for building foundations",
+            "slug": "foundations"
+        },
+        {
+            "name": "FOOTINGS",
+            "other_names": ["FOOTINGS", "Footings", "Spread Footings", "Footing Foundations Type I"],
+            "description": "Information about the design and construction of footings, including types and configurations",
+            "slug": "footings"
+        },
+        {
+            "name": "POST TENSIONED SLABS ON GRADE",
+            "other_names": ["SLAB-ON-GRADE FOUNDATION SYSTEMS", "MONOLITHIC SLAB-ON-GRADE FOUNDATION SYSTEM"],
+            "description": "Design and construction details for post-tensioned slabs on grade",
+            "slug": "post_tensioned_slabs_on_grade"
+        },
+        {
+            "name": "SLAB PERFORMANCE RISK",
+            "other_names": ["FLOOR SYSTEMS AND SLABS-ON-GRADE", "BASEMENT SLAB PERFORMANCE RISK"],
+            "description": "Information about the potential risks and performance considerations for slabs on grade",
+            "slug": "slab_performance_risk"
+        },
+        {
+            "name": "CONCRETE",
+            "other_names": [],
+            "description": "Properties, specifications, and testing requirements for concrete used in construction",
+            "slug": "concrete"
+        },
+        {
+            "name": "PAVEMENTS",
+            "other_names": [],
+            "description": "Design and construction details for pavements, including materials and thicknesses",
+            "slug": "pavements"
+        },
+        {
+            "name": "RETAINING WALLS",
+            "other_names": ["SITE RETAINING WALLS"],
+            "description": "Design and construction details for retaining walls on the project site",
+            "slug": "retaining_walls"
+        },
+        {
+            "name": "DRILLED PIERS",
+            "other_names": ["Drilled Piers Bottomed in Bedrock", "Drilled Piers"],
+            "description": "Information about the design and construction of drilled piers, including foundation types",
+            "slug": "drilled_piers"
+        }
+    ]
+}

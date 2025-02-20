@@ -1,0 +1,346 @@
+{
+    "datapoints_prompts": [
+        {
+            "slug_name": "project_name",
+            "desc": "project name, found after the report type, before the filing no and address",
+            "section": "cover",
+            "question": "What is the Project Name of this report?"
+        },
+        {
+            "slug_name": "client_name",
+            "desc": "client name, prepared for, found before the client address",
+            "section": "cover",
+            "question": "What is the client's name?:"
+        },
+        {
+            "slug_name": "cover-project_number",
+            "desc": "project number, project no., consists of a series of capital letters and numbers",
+            "section": "cover",
+            "question": "What is the project number of this report? Usually it starts with a pair of letters and numbers, followed by a series of numbers."
+        },
+        {
+            "slug_name": "cover-report_date",
+            "desc": "the date the report was made, found after project number/project no",
+            "section": "cover",
+            "question": "Given the text, what is the date of this report?"
+        },
+        {
+            "slug_name": "scope-proposal_number",
+            "desc": "proposal number/id, service agreement, scope of the investigation proposal number",
+            "section": "scope",
+            "question": "What is the proposal number/id or service agreement id?:"
+        },
+        {
+            "slug_name": "scope-proposal_date",
+            "desc": "date of proposal, date of service agreement, date of scope of the investigation proposal dated",
+            "section": "scope",
+            "question": "What date was the proposal presented?:"
+        },
+        {
+            "section": "proposed_construction",
+            "slug_name": "building_use_type",
+            "search": "description of structures, basements, residences, offices, materials used",
+            "question": "What are the characteristics of the proposed buildings?",
+            "desc": "The characteristics of the proposed buildings, including their uses and materials, are detailed in the proposed construction section."
+        },
+        {
+            "section": "investigation",
+            "slug_name": "num_borings",
+            "search": "number of drilled exploratory borings, shallow borings, borings, drilled",
+            "question": "What is the total number of borings drilled?",
+            "desc": "The total number of borings drilled is mentioned in the investigation section."
+        },
+        {
+            "section": "investigation",
+            "slug_name": "depth_borings",
+            "search": "depth of drilled exploratory borings, shallow borings, borings, drilled, depth",
+            "question": "To what depth were the borings drilled?",
+            "desc": "The feet at which the deepest boring was drilled."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "soil_type",
+            "search": "soil composition, bedrock composition, soil type, bedrock type",
+            "question": "What is the composition of the soil and/or bedrock mentioned in the report?",
+            "desc": "The composition of soil and/or bedrock is described in the subsurface conditions section."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "depth_bedrock",
+            "search": "depth of bedrock, bedrock depth, encountered bedrock",
+            "question": "At what depth was bedrock encountered or discovered?",
+            "desc": "The depth at which bedrock was encountered is found in the subsurface conditions section."
+        },
+        {
+            "section": "subsurface_conditions",
+            "slug_name": "depth_groundwater",
+            "search": "depth of groundwater, groundwater depth, encountered groundwater",
+            "question": "At what depth was groundwater encountered or discovered?",
+            "desc": "The depth at which groundwater was encountered is recorded in the subsurface conditions section."
+        },
+        {
+            "slug_name": "subsurface_conditions-seismic_site_class",
+            "desc": "",
+            "section": "subsurface_conditions",
+            "question": "Extract from the following report seismic site class and the associated IBC section:"
+        },
+        {
+            "slug_name": "geological_hazards-geological_hazard",
+            "desc": "",
+            "section": "geological_hazards",
+            "question": "Extract from the following report the geologic hazard present at the site:"
+        },
+        {
+            "slug_name": "geologic_hazards-shortform_hazard_discussion",
+            "desc": "",
+            "section": "geologic_hazards",
+            "question": "The following is a section from an engineering report titled Geologic Hazards. Summarize the mentioned hazards with a focus on any discussion of collapse-prone hazards.\nReport section:"
+        },
+        {
+            "slug_name": "geologic_hazards-geologic_hazard_subsections",
+            "desc": "",
+            "section": "geologic_hazards",
+            "question": "The following is a section from an engineering report titled Geologic Hazards. Extract the titles of any subsections that warranted their own discussion. There may be only a single section, in which case you should extract nothing.\nReport section:"
+        },
+        {
+            "slug_name": "site_development-subexcavation_depths",
+            "desc": "",
+            "section": "site_development",
+            "question": "Extract from the following engineering report the DEPTH or DEPTHS of sub-excavation. If sub-excavation depth is not mentioned, extract nothing:"
+        },
+        {
+            "slug_name": "foundations-recommended_foundation",
+            "desc": "",
+            "section": "foundations",
+            "question": "Extract from the following report the recommended foundation type:"
+        },
+        {
+            "slug_name": "footings-max_soil_pressure",
+            "desc": "",
+            "section": "footings",
+            "question": "Extract from the following report the maximum soil pressure (reported in 'psf') recommended:"
+        },
+        {
+            "slug_name": "footings-footings_minimum_deadload",
+            "desc": "",
+            "section": "footings",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Minimum Deadload'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_end_pressure",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following report the maximum allowable end pressure (reported in 'psf') that should be used in the design:"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_skin_friction",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following report the allowable skin friction (reported in 'psf') for the piers:"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_min_length",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following report the minimum length for piers (reported in 'feet'):"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_min_penetration",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following report the minimum depth (reported in 'feet') that piers should be drilled to:"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_min_deadload",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following report the minimum deadload pressure (reported in 'psf') recommended for the design of the piers:"
+        },
+        {
+            "slug_name": "drilled_piers-uplift_force",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "The following is the 'drilled peirs' section from an engineering report. Extract the value for the UPLIFT FORCE from the text.\nReport section text:"
+        },
+        {
+            "slug_name": "drilled_piers-drilled_pier_void_thickness",
+            "desc": "",
+            "section": "drilled_piers",
+            "question": "Extract from the following text the void or continuous void thickness (reported in 'inches'):"
+        },
+        {
+            "slug_name": "laterally_loaded_piers-soil_input_data_for_lpile",
+            "desc": "",
+            "section": "laterally_loaded_piers",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Soil Input Data for LPILE'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "laterally_loaded_piers-horizontal_subgrade_modulus_values_per_soil_type",
+            "desc": "",
+            "section": "laterally_loaded_piers",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Horizontal Subgrade Modulus Values per soil type'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "micropiles-grout_ground_interface_bond_strength",
+            "desc": "",
+            "section": "micropiles",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Grout ground interface bond strength'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "micropiles-micropiles_minimum_length",
+            "desc": "",
+            "section": "micropiles",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Miropiles minimum length'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "micropiles-micropiles_minimum_embedment",
+            "desc": "",
+            "section": "micropiles",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Micropiles minimum embedment'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "micropiles-micropiles_minimum_deadload",
+            "desc": "",
+            "section": "micropiles",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Micropiles minimum deadload'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "micropiles-micropiles_void_thickness",
+            "desc": "",
+            "section": "micropiles",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Micropiles void Thickness'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-maximum_soil_pressure",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'maximum soil pressure'. It is sometimes written as 'maximum allowable soil pressure' or 'soil bearing pressure' or something similar. The value should be reported in 'pounds-per-square-ft' which can also be written 'psf'. It will not be in 'feet' or 'inches'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-modulus_of_subgrade_reaction",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'modulus of subgrade reaction'. The value is usually reported in 'pounds-per-square-inch per inch' which can also be written 'psi/in'. It will not be in 'feet' or 'inches'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-ym_edge_lift",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'Differential soil movement for Edge Lift'. Differential soil movement is also referred to as 'ym'. The value is usually in 'inches', but may be in feet in some cases.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-ym_center_lift",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'Differential soil movement for Center Lift'. Differential soil movement is also referred to as 'ym'. Center Lift can also be referred to as 'edge drop'. The value is usually in 'inches', but may be in 'feet' in some cases.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-em_edge_lift",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'Edge Moisture Variation for Edge Lift'. Edge moisture variation is also referred to as 'em'. The value is usually in 'feet', but could be in 'inches' in some cases.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-em_center_lift",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "The following is a series of excerpts from an engineering report. They should contain a value for 'Edge Moisture Variation for Center Lift'. Edge moisture variation is also referred to as 'em'. Center Lift can also be referred to as 'edge drop'. The value is usually in 'feet', but could be in 'inches' in some cases.\nReport section:"
+        },
+        {
+            "slug_name": "slab_performance_risk-potential_heave",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "Extract from the following report the estimated potential heave (reported in 'inches'):"
+        },
+        {
+            "slug_name": "slab_performance_risk-depth_of_wetting",
+            "desc": "",
+            "section": "slab_performance_risk",
+            "question": "Extract from the following report the depth of wetting (measured in 'feet') considered for the heave evaluation:"
+        },
+        {
+            "slug_name": "below_grade_walls-atrest_equivalent_fluid_density_and_associated_backfill_material",
+            "desc": "",
+            "section": "below_grade_walls",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'At-rest equivalent fluid density and associated backfill material'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "below_grade_walls-active_equivalent_fluid_density_and_associated_backfill_material_below_grade",
+            "desc": "",
+            "section": "below_grade_walls",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Active equivalent fluid density and associated backfill material'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "below_grade_walls-passive_equivalent_fluid_density_and_associated_backfill_material_below_grade",
+            "desc": "",
+            "section": "below_grade_walls",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Passive equivalent fluid density and associated backfill material'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "retaining_walls-at_rest_equivalent_fluid_density",
+            "desc": "",
+            "section": "retaining_walls",
+            "question": "Extract from the following report what equivalent fluid density should be used for at rest earth pressure calculations:"
+        },
+        {
+            "slug_name": "retaining_walls-active_equivalent_fluid_density_and_associated_backfill_material_retaining_wall",
+            "desc": "",
+            "section": "retaining_walls",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Active equivalent fluid density and associated backfill material'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "retaining_walls-passive_equivalent_fluid_density_and_associated_backfill_material_retaining_wall",
+            "desc": "",
+            "section": "retaining_walls",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Passive equivalent fluid density and associated backfill material'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "retaining_walls-friction_angle_cohesion_and_unit_weight_with_associated_material_types",
+            "desc": "",
+            "section": "retaining_walls",
+            "question": "The following text is a section titled RETAINING WALLS from an engineering report. For the retaining wall mentioned in the text, extract the friction angle, cohesion, and unit weight of the soil, and the associated material types. If the report does not mention these values, extract nothing.\nReport section text:"
+        },
+        {
+            "slug_name": "concrete-sulfate_concentration",
+            "desc": "",
+            "section": "concrete",
+            "question": "Extract from the following report the measured water soluble sulfate concentration and the number of samples used to determine this concentration:"
+        },
+        {
+            "slug_name": "pavements-soil_classification",
+            "desc": "",
+            "section": "pavements",
+            "question": "The following is an excerpt from an engineering report. They should contain a value for 'Soil classification'. If no suitable value is found in the excerpt, do not extract any text.\nReport section:"
+        },
+        {
+            "slug_name": "pavements-haveem_stabilometer_value",
+            "desc": "",
+            "section": "pavements",
+            "question": "Extract from the following report the measured CBR or Hveem Stabilometer value:"
+        },
+        {
+            "slug_name": "pavements-asphalt-thickness",
+            "desc": "",
+            "section": "pavements",
+            "question": "The following is an engineering report. Extract the 'Asphalt pavement section thickness and associated areas'."
+        },
+        {
+            "slug_name": "pavements-cement_thickness",
+            "desc": "",
+            "section": "pavements",
+            "question": "The following is an engineering report. Extract the 'Portland cement concrete pavement section thickness and associated areas':"
+        },
+        {
+            "slug_name": "references-references",
+            "desc": "",
+            "section": "references",
+            "question": "Extract the list of documents references from the following report. They are sometimes enumerated in a numbered list, and sometimes mentioned in-line in paragraph form:"
+        },
+        {
+            "slug_name": "cover-site_address",
+            "desc": "",
+            "section": "cover",
+            "question": "Extract address or location desc from the following report. It's a US address or some desc of a location. Include as much of the location desc as you find usually ending with a state name up to the words 'prepared for'."
+        }
+    ]
+}

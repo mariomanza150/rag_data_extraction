@@ -1,0 +1,10 @@
+{
+    "datapoints_prompts": [
+        {
+            "slug_name": "title",
+            "search": "author,copyright",
+            "question": "What is the title of this book?",
+            "desc": ""
+        }
+    ]
+}
